@@ -1,0 +1,11 @@
+<div class="contenedor-cards row">
+    <div *ngFor="let producto of productos" class="card col-md" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="imgen no disponible">
+        <div class="card-body">
+            <h5 class="card-title">Titulo: {{producto.descripcion | uppercase}}</h5>
+            <h2 class="card-text">Precio: {{producto.precio | currency }}</h2>
+            <a href="#" class="btn btn-primary">ver producto</a>
+        </div>
+    </div>
+
+</div>

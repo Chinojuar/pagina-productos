@@ -1,0 +1,9 @@
+.contenedor-cards {
+    padding: 30px;
+}
+
+.card {
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}

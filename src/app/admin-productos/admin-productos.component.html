@@ -1,0 +1,44 @@
+<div class="contenedor row">
+
+
+    <div class="col">
+        <h1>Tabla de Artículos</h1>
+        <table class="table table-bordered border-primary">
+            <tr>
+                <td>Código</td>
+                <td>Descripción</td>
+                <td>Precio</td>
+                <td>Eliminar</td>
+                <td>Seleccionar</td>
+            </tr>
+            <tr *ngFor="let articulo of articulos">
+                <td>{{articulo.id}}</td>
+                <td>{{articulo.descripcion}}</td>
+                <td>{{articulo.precio}}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="borrar(articulo.id)">Borrar</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary" (click)="seleccionar(articulo.id,articulo.descripcion,articulo.precio)">Seleccionar</button>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <div class="form col-lg-4 ">
+        <h2>Formulario de articulos</h2>
+        <div class="contenedor-lineas">
+            <label for="exampleInputEmail1" class="form-label">Código</label>
+            <input class="form-control" type="number" [(ngModel)]="articulo.id">
+            <label for="exampleInputDescripcion" class="form-label">Descripción:</label>
+            <input class="form-control" type="text" [(ngModel)]="articulo.descripcion">
+            <label for="exampleInputDescripcion" class="form-label">Precio:</label>
+            <input class="form-control" type="number" [(ngModel)]="articulo.precio">
+        </div>
+        <button class="btn btn-primary" (click)=" guardarArtuculos()">Guardar</button>
+        <button class="btn btn-primary" (click)="modificar()">Modificar</button>
+
+    </div>
+
+</div>

@@ -1,0 +1,52 @@
+.contenedor {
+    padding: 30px;
+}
+
+.form {
+    background-color: rgb(176, 252, 216);
+    margin-bottom: 300px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.form h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.form button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.contenedor-lineas {
+    padding: 20px;
+}
+
+.lineas {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 450px;
+}
+
+
+/* TABLA DE ARTICULOS   */
+
+
+/*
+.table {
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+
+/*
+table button {
+    width: 130px;
+}*/
+
+table h1 {
+    text-align: center;
+}
